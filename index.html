@@ -1,94 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sharath Chandra Devoju | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharath Chandra Devoju - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav {
+      background: #162447;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffb703;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    h2 {
+      border-bottom: 3px solid #1e3c72;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .skills, .projects, .certifications {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #1e3c72;
+    }
+    footer {
+      text-align: center;
+      background: #162447;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+      position: relative;
+    }
+    footer a {
+      color: #ffb703;
+      text-decoration: none;
+    }
+    /* Resume Button */
+    .resume-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 12px 24px;
+      background: #ffb703;
+      color: #162447;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .resume-btn:hover {
+      background: #ffa502;
+      color: white;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <h1>Sharath Chandra Devoju</h1>
-    <p>📍 Hyderabad, Telangana, India | 📞 +91 8142128339 | ✉️ sharathdevoju1@gmail.com</p>
-    <p>
-      <a href="https://www.linkedin.com/in/sharath8142/" target="_blank">LinkedIn Profile</a>
-    </p>
+    <p>Aspiring Software Engineer | AI & ML Enthusiast | Web Developer</p>
   </header>
 
-  <section>
-    <h2>🎯 Objective</h2>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
     <p>
-      Building a rewarding career by getting hired in a renowned organization,
-      thereby utilizing my technical knowledge and problem-solving skills in a
-      challenging yet innovative environment.
+      I am Sharath Chandra Devoju, an aspiring software engineer with hands-on 
+      experience in Artificial Intelligence, Machine Learning, and Web Development. 
+      I am passionate about building impactful projects and continuously learning 
+      new technologies.
     </p>
   </section>
 
-  <section>
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><strong>B.Tech (CSE)</strong>, Arjun College of Technology and Science – 6.53 CGPA (2021–2024)</li>
-      <li><strong>Diploma (Metallurgy)</strong>, Jawaharlal Nehru Govt Polytechnic – 71% (2014–2017)</li>
-      <li><strong>SSC</strong>, Pragathi Talent High School – 8.0 GPA (2014)</li>
-    </ul>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Programming</h3><p>Java, C, Python</p></div>
+      <div class="card"><h3>Web</h3><p>HTML, CSS, JavaScript</p></div>
+      <div class="card"><h3>Databases</h3><p>MySQL</p></div>
+      <div class="card"><h3>Tools</h3><p>Git, VS Code, Eclipse</p></div>
+      <div class="card"><h3>OS</h3><p>Windows, Linux</p></div>
+    </div>
   </section>
 
-  <section>
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Java, C, Python</li>
-      <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
-      <li><strong>Database:</strong> MySQL</li>
-      <li><strong>Tools:</strong> Git, VS Code, Eclipse</li>
-      <li><strong>OS:</strong> Windows, Linux</li>
-    </ul>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Technical Trainer - CodeTantra</h3>
+      <p><strong>Nov 2024 – Feb 2025 | Hyderabad, Telangana</strong></p>
+      <ul>
+        <li>Conducted programming training sessions improving student skills.</li>
+        <li>Developed hands-on coding exercises and learning materials.</li>
+        <li>Collaborated with peers to ensure effective content delivery.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>AI/ML Internship - AICTE & Edunet Foundation</h3>
+      <p><strong>Jun 2025 – Jul 2025</strong></p>
+      <ul>
+        <li>Completed 6-week internship in Artificial Intelligence & Machine Learning.</li>
+        <li>Worked on ML models and real-world problem-solving tasks.</li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>💼 Experience</h2>
-    <p><strong>Technical Trainer</strong> | CodeTantra, Hyderabad (Nov 2024 – Feb 2025)</p>
-    <ul>
-      <li>Conducted engaging training sessions on programming languages.</li>
-      <li>Developed interactive learning materials.</li>
-      <li>Improved communication by collaborating with peers and students.</li>
-      <li>Kept training content up-to-date with new technologies.</li>
-    </ul>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>YouTube Analysis using ML</h3>
+        <p>Analyzed YouTube comments and predicted video popularity using ML models. Achieved 85% accuracy in detecting inappropriate content.</p>
+        <p><em>Python, Keras, Pandas, NumPy, NLP, Computer Vision</em></p>
+      </div>
+      <div class="card">
+        <h3>AI in E-Governance & Cybersecurity</h3>
+        <p>Developed an AI-powered framework improving smart city threat detection by 30%.</p>
+        <p><em>Python, ML, Scikit-learn</em></p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>📁 Projects</h2>
-    <ul>
-      <li>
-        <strong>Real-time Wall Clock:</strong>
-        <a href="https://devojusharathchandra.github.io/watch/" target="_blank">View Project</a>
-      </li>
-      <li>
-        <strong>Calculator Web App:</strong>
-        <a href="https://devojusharathchandra.github.io/calculator/" target="_blank">View Project</a>
-      </li>
-      <li>
-        <strong>YouTube Analysis using ML:</strong> Analyzed comments and predicted popularity using ML.
-      </li>
-      <li>
-        <strong>AI in E-Governance & Cybersecurity:</strong> Built a framework that improved threat detection by 30%.
-      </li>
-    </ul>
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="card">
+        <h3>AICTE Internship Certificate</h3>
+        <p>Completed 6-week internship on Artificial Intelligence & Machine Learning in collaboration with Edunet Foundation (Jun 2025 – Jul 2025).</p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>💪 Strengths</h2>
-    <ul>
-      <li>Strong time management and organizational skills</li>
-      <li>Effective communication and teamwork</li>
-      <li>Quick learner and proactive</li>
-      <li>Self-motivated and adaptable</li>
-    </ul>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sharathdevoju1@gmail.com">sharathdevoju1@gmail.com</a></p>
+    <p>Phone: +91 8142128339</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/sharath8142" target="_blank">linkedin.com/in/sharath8142</a></p>
+    <p>GitHub: <a href="https://github.com/devojusharathchandra" target="_blank">github.com/devojusharathchandra</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <button onclick="downloadResume()">📄 Download Resume</button>
+    <p>&copy; 2025 Sharath Chandra Devoju | Portfolio Website</p>
+    <a href="Sharathchandra_Devoju.pdf" class="resume-btn" download>⬇ Download My Resume</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Smooth Scroll for Navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
+
